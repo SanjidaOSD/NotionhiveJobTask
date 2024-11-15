@@ -17,6 +17,7 @@ import {
     Bars3Icon,
     XMarkIcon,
 } from "@heroicons/react/24/outline";
+import { IoSearchOutline } from "react-icons/io5";
 
 
 const navListMenuItems = [
@@ -272,7 +273,7 @@ const Menubar = () => {
     }, []);
 
     return (
-        <Navbar className="mx-auto max-w-screen-xl px-4 py-2 shadow-none">
+        <Navbar className="mx-auto px-4 py-2 shadow-none bg-transparent  border-none absolute z-50 max-w-[1216px] blur-none backdrop-blur-0">
             <div className="flex items-center justify-between text-blue-gray-900">
                 {/* logo */}
                 <div>
@@ -280,7 +281,7 @@ const Menubar = () => {
                         as="a"
                         href="#"
                         variant="h6"
-                        className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+                        className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-4xl"
                     >
                         LOGO
                     </Typography>
@@ -293,7 +294,9 @@ const Menubar = () => {
                     </div>
                 </div>
                 {/* sign in */}
-                <div>
+              
+                <div className="flex items-center gap-4 font-semibold">
+                <IoSearchOutline></IoSearchOutline>
                     Sign in
                 </div>
 

@@ -15,9 +15,10 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Banner = () => {
-    return (
-        <div>
-        
+  return (
+
+    <div>
+
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -32,14 +33,18 @@ const Banner = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><img src={slide1} alt="" className='w-full h-[640px] object-cover' /></SwiperSlide>
+        <SwiperSlide>
+          <div className='w-full'>
+            <img src={slide1} alt="" className='w-full h-[640px] object-cover block' />
+          </div>
+        </SwiperSlide>
         <SwiperSlide><img src={slide2} alt="" className='w-full h-[640px] object-cover' /></SwiperSlide>
-        <SwiperSlide><img src={slide3} alt="" className='w-full h-[640px] object-cover'/></SwiperSlide>
-       
+        <SwiperSlide><img src={slide3} alt="" className='w-full h-[640px] object-cover' /></SwiperSlide>
+
       </Swiper>
-    
-        </div>
-    );
+
+    </div>
+  );
 };
 
 export default Banner;
