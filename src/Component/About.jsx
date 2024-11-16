@@ -111,7 +111,7 @@ const About = () => {
             <p className="my-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br /> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 
             <div className="relative rounded-lg p-4">
-                <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end">
+                <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end lg:w-[1070px] lg:ml-16">
                     <div className="w-full lg:w-[488px] relative">
                         <img
                             src={data[currentIndex].img}
