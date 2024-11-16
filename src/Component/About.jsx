@@ -8,6 +8,7 @@
 
 import React, { useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
 import { IoArrowForwardSharp } from "react-icons/io5";
 
 const About = () => {
@@ -107,11 +108,13 @@ const About = () => {
 
     return (
         <div className="">
+            <div className="text-center">
             <h1 className="text-4xl my-5 font-semibold">ABOUT US</h1>
             <p className="my-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br /> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
 
-            <div className="relative rounded-lg p-4">
-                <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end lg:w-[1070px] lg:ml-16">
+            <div className="relative rounded-lg p-4 items-center">
+                <div className="flex flex-col lg:flex-row justify-between lg:items-end lg:w-[1090px] lg:ml-24">
                     <div className="w-full lg:w-[488px] relative">
                         <img
                             src={data[currentIndex].img}
@@ -128,10 +131,10 @@ const About = () => {
                                     >
                                         <span className="text-2xl lg:text-9xl text-white">{data[currentIndex].index}</span>
                                     </div>
-                                    <FaLongArrowAltRight
+                                    <FaArrowRightLong
                                         onClick={handleNext}
                                         className="absolute text-xl lg:text-5xl opacity-50"
-                                    ></FaLongArrowAltRight>
+                                    ></FaArrowRightLong>
                                 </div>
                             </div>
                         </div>

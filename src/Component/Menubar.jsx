@@ -124,7 +124,7 @@ function NavListMenu() {
                     <div>
                         <Typography
                             variant="h6"
-                            color="blue-gray"
+                            color=""
                             className="flex items-center text-sm font-bold hover:text-red-500"
                         >
                             {title}
@@ -147,7 +147,7 @@ function NavListMenu() {
                 <MenuHandler>
                     <Typography as="div" variant="small" className="font-medium">
                         <ListItem
-                            className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+                            className="flex items-center gap-2 py-2 pr-4 font-medium text-white"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => setIsMobileMenuOpen((cur) => !cur)}
                         >
@@ -169,8 +169,13 @@ function NavListMenu() {
                     <ul className="grid grid-cols-3 gap-y-2 gap-x-24 outline-none outline-0">
                         {renderItems}
                     </ul>
-                    <div>
+                    <div className="relative">
                         <img src={img1} alt="" />
+                        <div className="absolute top-[50%] left-[10%] text-white">
+                            <h1 className="text-3xl my-3">Bespoke Bifolds</h1>
+                            <p className="my-2">Our most popular bifold. Perfect for <br /> thermal efficiency.</p>
+                            <p>Create your own</p>
+                        </div>
                     </div>
                 </MenuList>
             </Menu>
@@ -188,7 +193,7 @@ function NavList() {
                 as="a"
                 href="#"
                 variant="small"
-                color="blue-gray"
+                color="white"
                 className="font-medium"
             >
                 <ListItem className="flex items-center gap-2 py-2 pr-4">Home</ListItem>
@@ -199,7 +204,7 @@ function NavList() {
                 as="a"
                 href="#"
                 variant="small"
-                color="blue-gray"
+                color="white"
                 className="font-medium"
             >
                 <ListItem className="flex items-center gap-2 py-2 pr-4">
@@ -214,7 +219,7 @@ function NavList() {
                 as="a"
                 href="#"
                 variant="small"
-                color="blue-gray"
+                color="white"
                 className="font-medium"
             >
                 <ListItem className="flex items-center gap-2 py-2 pr-4">
@@ -226,7 +231,7 @@ function NavList() {
                 as="a"
                 href="#"
                 variant="small"
-                color="blue-gray"
+                color="white"
                 className="font-medium"
             >
                 <ListItem className="flex items-center gap-2 py-2 pr-4">
@@ -238,7 +243,7 @@ function NavList() {
                 as="a"
                 href="#"
                 variant="small"
-                color="blue-gray"
+                color="white"
                 className="font-medium"
             >
                 <ListItem className="flex items-center gap-2 py-2 pr-4">
@@ -250,7 +255,7 @@ function NavList() {
                 as="a"
                 href="#"
                 variant="small"
-                color="blue-gray"
+                color="white"
                 className="font-medium"
             >
                 <ListItem className="flex items-center gap-2 py-2 pr-4">
@@ -273,8 +278,9 @@ const Menubar = () => {
     }, []);
 
     return (
-        <Navbar className="mx-auto px-4 py-2 shadow-none bg-transparent  border-none absolute z-50 max-w-[1216px] blur-none backdrop-blur-0">
-            <div className="flex items-center justify-between text-blue-gray-900">
+      <div className="mx-auto relative container">
+          <div className="mx-auto px-4 py-2 bg-transparent blur-none bg-opacity-0 shadow-none border-none absolute z-50 mt-12 top-[0%] left-[50%] w-full translate-x-[-50%]">
+            <div className="flex items-center justify-between text-white">
                 {/* logo */}
                 <div>
                     <Typography
@@ -302,7 +308,7 @@ const Menubar = () => {
 
                 <IconButton
                     variant="text"
-                    color="blue-gray"
+                    color=""
                     className="lg:hidden"
                     onClick={() => setOpenNav(!openNav)}
                 >
@@ -316,7 +322,8 @@ const Menubar = () => {
             <Collapse open={openNav}>
                 <NavList />
             </Collapse>
-        </Navbar>
+        </div>
+      </div>
     );
 };
 

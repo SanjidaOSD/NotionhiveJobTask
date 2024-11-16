@@ -6,11 +6,13 @@ import Blog from './Component/Blog';
 import Footer from './Component/Footer';
 import Menubar from './Component/Menubar';
 import Projects from './Component/Projects';
+import Topbar from './Component/Topbar';
 
 function App() {
 
   return (
     <div className='w-full'>
+      <Topbar></Topbar>
       <Menubar></Menubar>
       <Banner></Banner>
       <div className='mt-20 mb-20'>
@@ -20,7 +22,7 @@ function App() {
       <div>
         <Blog></Blog>
       </div>
-      <div>
+      <div className='mt-12'>
         <Footer></Footer>
       </div>
     </div>

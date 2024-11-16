@@ -11,7 +11,7 @@ const Projects = () => {
       head: 'Residential',
       img: 'https://i.postimg.cc/VvqBjBt4/Rectangle-46.png',
       title: "Commercial",
-      des: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+      des: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod dolor sit amet, consectetur adipiscing elit',
       num: '928 367 3789'
     },
     {
@@ -21,7 +21,7 @@ const Projects = () => {
       head: "Commercial",
       img: 'https://i.postimg.cc/TYjCmGqG/Rectangle-44.png',
       title: "Commercial",
-      des: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+      des: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod dolor sit amet, consectetur adipiscing elit',
       num: '928 367 3789'
     },
     {
@@ -31,7 +31,7 @@ const Projects = () => {
       head: "Duplex",
       img: 'https://i.postimg.cc/KYWNFYF7/Rectangle-45.png',
       title: "Commercial",
-      des: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+      des: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem  adipiscing elit, sed do eiusmod',
       num: '928 367 3789'
     }
   ]
@@ -57,7 +57,7 @@ const Projects = () => {
                         index === 0 &&
                         <h4 className="uppercase text-white absolute transition-all duration-700 top-[-50px] group-hover:top-[90px] left-0 group-hover:left-[120%] text-nowrap">Projects We have done</h4>
                       }
-                      <h2 className="text-[32px] transition-all duration-700 group-hover:text-[24px] font-thin text-white absolute bottom-16 group-hover:bottom-[-65px] group-hover:left-[23px] -left-10 z-10">{item.head}</h2>
+                      <h2 className="text-[32px] transition-all duration-700 group-hover:text-[24px] font-thin text-white absolute bottom-16 group-hover:bottom-[-65px] group-hover:left-[38px] -left-10 z-10">{item.head}</h2>
                       <img
                         src={item.img}
                         alt="Sample"
@@ -74,9 +74,9 @@ const Projects = () => {
 
                       <div className="mt-[-25px]">
                         <h3 className="text-[24px] px-10 pb-8 opacity-0">{item.head}</h3>
-                        <p className="text-[12px] pl-10 pb-10 pr-40 text-[#C4C4C4]">{item.des}</p>
+                        <p className="text-[12px] pl-10 pb-10 pr-20 text-[#C4C4C4] text-left">{item.des}</p>
                         <hr className="border border-white border-opacity-10" />
-                        <p className="text-[15px] px-10 pt-8 text-[#C4C4C4]">{item.num}</p>
+                        <p className="text-[15px] px-10 pt-8 text-[#C4C4C4] text-left">{item.num}</p>
                       </div>
                     </div>
                   </div>

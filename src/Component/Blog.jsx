@@ -32,10 +32,10 @@ const Blog = () => {
     ];
 
     return (
-        <div className=" lg:w-[1080px] lg:ml-16 items-center p-10">
+        <div className="  lg:ml-24 ">
             <h1 className="text-3xl font-semibold my-9 text-left">BLOG</h1>
             <Marquee>
-                <div className="flex gap-5">
+                <div className="flex gap-6">
                     {data.map((item, index) => (
 
                         <div
