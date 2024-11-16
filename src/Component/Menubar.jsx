@@ -23,93 +23,93 @@ import { IoSearchOutline } from "react-icons/io5";
 const navListMenuItems = [
     {
         title: "By Size",
-       
+
     },
     {
         title: "By Type",
-      
+
     },
     {
         title: "By Panel",
-       
+
     },
     {
         title: "Small Bifolds",
-       
+
     },
     {
         title: "Stock Bifolds",
-       
+
     },
     {
         title: "2 Panel Bifolds",
-        
+
     },
     {
         title: "Medium Bifolds",
-        
+
     },
     {
         title: "Corner Bifolds",
-     
+
     },
     {
         title: "3 Panel Bifolds",
-        
+
     },
     {
         title: "Large Bifolds",
-       
+
     },
     {
         title: " ",
-       
+
     },
     {
         title: "4 panel Bifolds",
-        
+
     },
     {
         title: "All Stock Bifolds",
-      
+
     },
     {
         title: " ",
-      
+
     },
     {
         title: "5 panel Bifolds",
-      
+
     },
     {
         title: " ",
-      
+
     },
     {
         title: " ",
-      
+
     },
     {
         title: "6 panel Bifolds",
-      
+
     },
     {
         title: " ",
-      
+
     },
     {
         title: " ",
-      
+
     },
     {
         title: "7 panel Bifolds",
-      
+
     },
     {
         title: " ",
-      
+
     },
-    
+
 ];
 
 
@@ -117,19 +117,19 @@ function NavListMenu() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
     const renderItems = navListMenuItems.map(
-        ({  title }, key) => (
+        ({ title }, key) => (
             <a href="#" key={key}>
-                <MenuItem className="flex items-center gap-3 rounded-lg">
-                  
+                <MenuItem className="menu_list_item flex items-center gap-3 rounded-lg">
+
                     <div>
                         <Typography
                             variant="h6"
                             color=""
-                            className="flex items-center text-sm font-bold hover:text-red-500"
+                            className="flex items-center text-black hover:text-red-500 text-sm font-bold"
                         >
                             {title}
                         </Typography>
-                       
+
                     </div>
                 </MenuItem>
             </a>
@@ -147,11 +147,14 @@ function NavListMenu() {
                 <MenuHandler>
                     <Typography as="div" variant="small" className="font-medium">
                         <ListItem
-                            className="flex items-center gap-2 py-2 pr-4 font-medium text-white"
+                            className="menu_list_item flex items-center gap-2 py-2 pr-4 font-medium text-black lg:text-white hover:text-red-500"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => setIsMobileMenuOpen((cur) => !cur)}
                         >
-                            Resources
+                            <span className="menu_list_item">
+                                Resources
+                            </span>
+
                             <ChevronDownIcon
                                 strokeWidth={2.5}
                                 className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "rotate-180" : ""
@@ -193,10 +196,10 @@ function NavList() {
                 as="a"
                 href="#"
                 variant="small"
-                color="white"
-                className="font-medium"
+                color=""
+                className="font-medium hover:bg-transparent"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4">Home</ListItem>
+                <ListItem className="flex text-black menu_list_item lg:text-white items-center gap-2 py-2 hover:text-red-500 pr-4">Home</ListItem>
             </Typography>
 
 
@@ -204,10 +207,10 @@ function NavList() {
                 as="a"
                 href="#"
                 variant="small"
-                color="white"
+                color=""
                 className="font-medium"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4">
+                <ListItem className="menu_list_item flex items-center text-black lg:text-white hover:text-red-500 gap-2 py-2 pr-4">
                     About
                 </ListItem>
             </Typography>
@@ -219,49 +222,49 @@ function NavList() {
                 as="a"
                 href="#"
                 variant="small"
-                color="white"
+                color=""
                 className="font-medium"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4">
+                <ListItem className="menu_list_item flex hover:text-red-500 text-black lg:text-white items-center gap-2 py-2 pr-4">
                     Contact Us
                 </ListItem>
-               
+
             </Typography>
             <Typography
                 as="a"
                 href="#"
                 variant="small"
-                color="white"
+                color=""
                 className="font-medium"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4">
+                <ListItem className="menu_list_item hover:text-red-500 flex text-black lg:text-white items-center gap-2 py-2 pr-4">
                     Projects
                 </ListItem>
-               
+
             </Typography>
             <Typography
                 as="a"
                 href="#"
                 variant="small"
-                color="white"
+                color=""
                 className="font-medium"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4">
-                Sustainability
+                <ListItem className="menu_list_item flex hover:text-red-500 text-black lg:text-white items-center gap-2 py-2 pr-4">
+                    Sustainability
                 </ListItem>
-               
+
             </Typography>
             <Typography
                 as="a"
                 href="#"
                 variant="small"
-                color="white"
+                color=""
                 className="font-medium"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4">
+                <ListItem className="menu_list_item bg-transparent flex hover:text-red-500 text-black lg:text-white items-center gap-2 py-2 pr-4">
                     more
                 </ListItem>
-               
+
             </Typography>
         </List>
     );
@@ -278,52 +281,54 @@ const Menubar = () => {
     }, []);
 
     return (
-      <div className="mx-auto relative container">
-          <div className="mx-auto px-4 py-2 bg-transparent blur-none bg-opacity-0 shadow-none border-none absolute z-50 mt-12 top-[0%] left-[50%] w-full translate-x-[-50%]">
-            <div className="flex items-center justify-between text-white">
-                {/* logo */}
-                <div>
-                    <Typography
-                        as="a"
-                        href="#"
-                        variant="h6"
-                        className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-4xl"
-                    >
-                        LOGO
-                    </Typography>
-                </div>
-                {/* menu item */}
-
-                <div>
-                    <div className="hidden lg:block">
-                        <NavList />
+        <div className="mx-auto relative container">
+            <div className="mx-auto px-4 py-2 main_menu_bar bg-transparent blur-none bg-opacity-0 shadow-none border-none absolute z-50 mt-3 sm:mt-12 top-[0%] left-[50%] w-full translate-x-[-50%]">
+                <div className="flex items-center justify-between text-white">
+                    {/* logo */}
+                    <div>
+                        <Typography
+                            as="a"
+                            href="#"
+                            variant="h6"
+                            className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-4xl"
+                        >
+                            LOGO
+                        </Typography>
                     </div>
-                </div>
-                {/* sign in */}
-              
-                <div className="flex items-center gap-4 font-semibold">
-                <IoSearchOutline></IoSearchOutline>
-                    Sign in
-                </div>
+                    {/* menu item */}
 
-                <IconButton
-                    variant="text"
-                    color=""
-                    className="lg:hidden"
-                    onClick={() => setOpenNav(!openNav)}
-                >
-                    {openNav ? (
-                        <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-                    ) : (
-                        <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-                    )}
-                </IconButton>
+                    <div>
+                        <div className="hidden lg:block">
+                            <NavList />
+                        </div>
+                    </div>
+                    {/* sign in */}
+
+                    <div className="flex items-center gap-4 font-semibold">
+                        <IoSearchOutline></IoSearchOutline>
+                        <span className="menu_list_item cursor-pointer hover:text-red-500">
+                            Sign in
+                        </span>
+                    </div>
+
+                    <IconButton
+                        variant="text"
+                        color=""
+                        className="lg:hidden"
+                        onClick={() => setOpenNav(!openNav)}
+                    >
+                        {openNav ? (
+                            <XMarkIcon className="h-6 w-6 text-white" strokeWidth={2} />
+                        ) : (
+                            <Bars3Icon className="h-6 w-6 text-white" strokeWidth={2} />
+                        )}
+                    </IconButton>
+                </div>
+                <Collapse open={openNav} className="bg-white rounded-lg text-black w-full">
+                    <NavList />
+                </Collapse>
             </div>
-            <Collapse open={openNav}>
-                <NavList />
-            </Collapse>
         </div>
-      </div>
     );
 };
 

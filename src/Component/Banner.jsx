@@ -4,14 +4,10 @@ import slide1 from '../assets/slide1.png'
 import slide2 from '../assets/slider2.jpg'
 import slide3 from '../assets/slider3.jpg'
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-// import './styles.css';
-
-// import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Banner = () => {
@@ -33,10 +29,12 @@ const Banner = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper relative"
       >
-        <div className='absolute top-[35%] left-[8%] text-white z-50'>
-          <h1 className='text-5xl uppercase'>Modern elegance</h1>
-          <p className='my-6'>Our most popular bifold. Perfect for thermal efficiency.</p>
-          <button className='px-2 py-3 bg-[#EA4715] text-white rounded-lg'>OUR SERVICE</button>
+        <div className='absolute ml-[-16px] sm:ml-0 top-[35%] left-[8%] text-white z-50'>
+          <h1 className='text-2xl md:text-3xl lg:text-5xl uppercase '>Modern elegance</h1>
+          <p className='my-6 max-w-[300px]'>Our most popular bifold. Perfect for thermal efficiency.</p>
+          <div className=''>
+          <button className='px-5 py-2 bg-[#EA4715] text-white rounded-lg'>OUR SERVICE</button>
+          </div>
         </div>
         <SwiperSlide>
 
@@ -44,7 +42,7 @@ const Banner = () => {
             <div className='absolute w-full h-full bg-black bg-opacity-50'>
 
             </div>
-            <img src={slide1} alt="" className='w-full max-h-[640px] object-cover block' />
+            <img src={slide1} alt="" className='w-full min-h-[440px] md:max-h-[640px] object-cover block' />
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -53,7 +51,7 @@ const Banner = () => {
             <div className='absolute w-full h-full bg-black bg-opacity-50'>
 
             </div>
-            <img src={slide2} alt="" className='w-full max-h-[640px] object-cover block' />
+            <img src={slide2} alt="" className='w-full min-h-[440px] md:max-h-[640px] object-cover block' />
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -62,7 +60,7 @@ const Banner = () => {
             <div className='absolute w-full h-full bg-black bg-opacity-50'>
 
             </div>
-            <img src={slide3} alt="" className='w-full max-h-[640px] object-cover block' />
+            <img src={slide3} alt="" className='w-full min-h-[440px] md:max-h-[640px] object-cover block' />
           </div>
         </SwiperSlide>
 

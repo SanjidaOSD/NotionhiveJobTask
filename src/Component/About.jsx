@@ -13,62 +13,6 @@ import { IoArrowForwardSharp } from "react-icons/io5";
 
 const About = () => {
 
-    // const pagination = {
-    //     clickable: true,
-    //     renderBullet: function (index, className) {
-    //         return '<span class="' + className + '">' + (index + 1) + '</span>';
-    //     },
-    // };
-
-
-    // return (
-    //     <div>
-    //         <div>
-    //             <h1 className="text-4xl my-5 font-semibold">ABOUT US</h1>
-    //             <p className="my-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br /> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-    //         </div>
-    //         <Swiper
-    //             spaceBetween={30}
-    //             pagination={pagination}
-    //             centeredSlides={true}
-    //             autoplay={false}
-    //             navigation={true}
-    //             modules={[Pagination, Navigation]}
-    //             className="mySwiper"
-    //         >
-    //             <SwiperSlide>
-    //                 <div className='w-full flex justify-between'>
-    //                     <div>
-    //                         <img src="https://i.postimg.cc/g2PQG5fT/Rectangle-40.png" alt="" />
-    //                     </div>
-    //                     <div className='bg-red-700 h-[300px] w-[120px]'>
-
-    //                     </div>
-    //                     <div>
-    //                         <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse nam reprehenderit</h1>
-    //                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim doloremque, quae mollitia recusandae architecto corporis, et illo tempore? Eaque, aliquid.</p>
-    //                         <button className='px-5 py-2 bg-black text-white rounded-md'>Learn More</button>
-    //                     </div>
-
-    //                 </div>
-    //             </SwiperSlide>
-    //             <SwiperSlide>
-    //                 <div className='w-full'>
-    //                     <p>Slide 2</p>
-    //                 </div>
-    //             </SwiperSlide>
-    //             <SwiperSlide>
-    //                 <div className='w-full'>
-    //                     <p>Slide 3</p>
-    //                 </div>
-    //             </SwiperSlide>
-    //         </Swiper>
-
-    //     </div>
-    // );
-
-
-
     const data = [
         {
             img: "https://i.postimg.cc/g2PQG5fT/Rectangle-40.png",
@@ -119,11 +63,11 @@ const About = () => {
                         <img
                             src={data[currentIndex].img}
                             alt={`Slide ${currentIndex + 1}`}
-                            className="w-full lg:w-[488px] h-[300px] lg:h-[465px] object-cover rounded-md"
+                            className="w-full md:w-[90%] lg:w-[488px] h-[300px] lg:h-[465px] object-cover rounded-md"
                         />
 
                         <div className="absolute top-0 left-full transform -translate-x-1/2 lg:translate-x-0 lg:left-[100%]">
-                            <div className="w-[100px] h-[200px] lg:w-[156px] lg:h-[323px] bg-[#EA4715]">
+                            <div className="w-[100px] ml-[-100px] h-[200px] lg:w-[156px] lg:h-[323px] bg-[#EA4715]">
                                 <div className="flex flex-col justify-center items-center h-full">
                                     <div
                                         onClick={handleNext}

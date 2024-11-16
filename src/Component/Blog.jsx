@@ -33,14 +33,14 @@ const Blog = () => {
 
     return (
         <div className="  lg:ml-24 ">
-            <h1 className="text-3xl font-semibold my-9 text-left">BLOG</h1>
+            <h1 className="text-2xl md:text-3xl font-semibold my-9 mx-2 text-left">BLOG</h1>
             <Marquee>
-                <div className="flex gap-6">
+                <div className="flex">
                     {data.map((item, index) => (
 
                         <div
                             key={index}
-                            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+                            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow mr-6"
                         >
 
                             <div className='relative'>

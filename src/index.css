@@ -65,7 +65,7 @@ body{  font-family: "Red Hat Display", sans-serif};
   .swiper-pagination {
    
     position: absolute !important;
-    top: 70% !important; 
+    top: 80% !important; 
     left: -40% !important; 
     z-index: 10 !important; 
   }
@@ -74,4 +74,15 @@ body{  font-family: "Red Hat Display", sans-serif};
   }
   
   
-  
+  .menu_list_item:hover {
+    background-color:transparent !important;
+  }
+
+  .menu_list_item:focus {
+    background-color:transparent !important;
+    color:red !important;
+  }
+
+  .w-full.p-3.rounded-lg.text-start.leading-tight.transition-all.hover\:bg-blue-gray-50.hover\:bg-opacity-80.focus\:bg-blue-gray-50.focus\:bg-opacity-80.active\:bg-opacity-80.active\:text-blue-gray-900.outline-none.bg-blue-gray-50\/50.menu_list_item.flex.items-center.gap-2.py-2.pr-4.font-medium.text-black.lg\:text-white.hover\:text-red-500 {
+    background: transparent;
+}

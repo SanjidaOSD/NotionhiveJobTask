@@ -4,6 +4,7 @@ import About from './Component/About';
 import Banner from './Component/Banner';
 import Blog from './Component/Blog';
 import Footer from './Component/Footer';
+import Map from './Component/Map';
 import Menubar from './Component/Menubar';
 import Projects from './Component/Projects';
 import Topbar from './Component/Topbar';
@@ -22,6 +23,7 @@ function App() {
       <div>
         <Blog></Blog>
       </div>
+      <Map></Map>
       <div className='mt-12'>
         <Footer></Footer>
       </div>
